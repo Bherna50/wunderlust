@@ -168,13 +168,25 @@ stroke-linecap="round" stroke-linejoin="round">
 Population: 923,608
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 <h2>Contact Us</h2>
-<form>
-First Name (Enter first name)
-Last Name (Enter last name)
-Contact Method (Email, T ext, Phone)
-Email Address (Enter Email)
-Phone Number (Enter telephone number)
-Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, T enerife, Valencia)
+<form action="" method="">
+<label for="firstname">First Name (Enter first name)</label>
+<input type="text" name="firstname" id="firstname" required>
+<label for="lastname"> Name (Enter last name)</label>
+<input type="text" name="lastname" id="lastname" required>
+<fieldset>
+    <legend>Contact Method (Email,Text, Phone)</legend>
+    <input id="phone" type="radio" name="phone" value="phone">
+	<label for="phone">Phone</label>
+	<input id="text" type="radio" name="text" value="text">
+	<label for="text">Text</label>
+    <input id="email" type="radio" name="contact" value="email">
+	<label for="email">Email</label>
+</fieldset>
+<label for="email">Email Address (Enter Email)</label>
+<input type="text" name="email" id="email">
+<label for="phone">Phone Number (Enter telephone number)</label>
+<input type="tel" name="phone" id="phone">
+Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
 Travel Time (Fall, Winter, Spring, Summer, Flexible)
 </form>
 <small>Copyright 2021 Wunderlust<br>
