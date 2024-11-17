@@ -4,10 +4,10 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 <nav>
 <ul>
-● <li><a>Destinations</a></li>
-● <li><a>Inspirations</a></li>
-● <li><a>Special</a></li>
-● <li><a>Contact Us</a></li>
+    <li><a>● Destinations</a></li>
+    <li><a>● Inspirations</a></li>
+    <li><a>● Special</a></li>
+    <li><a>● Contact Us</a></li>
 </ul>
 </nav>
 <h2>Majorca</h2>
@@ -165,7 +165,7 @@ stroke-linecap="round" stroke-linejoin="round">
 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
 <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
 </svg>
-Population: 923,608
+<p>Population: 923,608</p>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 <h2>Contact Us</h2>
 <form action="" method="">
@@ -186,8 +186,25 @@ Population: 923,608
 <input type="text" name="email" id="email">
 <label for="phone">Phone Number (Enter telephone number)</label>
 <input type="tel" name="phone" id="phone">
-Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-Travel Time (Fall, Winter, Spring, Summer, Flexible)
+<label for="destination">Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)</label>
+<select id="destination">
+    <option value="Ba">Barcelona</option>
+    <option value="Gr">Granada</option>
+    <option value="Ib">Ibiza</option>
+    <option value="Ma">Madrid</option>
+    <option value="Mj">Majorca</option>
+    <option value="Se">Seville</option>
+    <option value="Tr">Tenerife</option>
+    <option value="Va">Valencia</option>
+</select>
+<label for="time">Travel Time (Fall, Winter, Spring, Summer, Flexible)</label>
+<select id="time">
+    <option value="fall">Fall</option>
+    <option value="winter">Winter</option>
+    <option value="spring">Spring</option>
+    <option value="summer">Summer</option>
+</select>
+    <input type="submit" name="submit" value="Submit">
 </form>
 <small>Copyright 2021 Wunderlust<br>
 Privacy Statement<br>
